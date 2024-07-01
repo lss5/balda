@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\BaldaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [BaldaController::class, 'index']);
